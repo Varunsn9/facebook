@@ -41,6 +41,7 @@ driver.findElement(By.name("login")).click();
 driver.findElement(By.xpath("//span[.='Naveen Naveen S']")).click();
 driver.findElement(By.xpath("//p[@class='xat24cr xdj266r']")).sendKeys(dtf.format(now)+""+"hi",Keys.RETURN);
 Thread.sleep(1000);
+System.out.println(dtf.format(now)+""+"hi");
 driver.close();
 }
 }
