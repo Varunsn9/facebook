@@ -25,7 +25,7 @@ WebDriverManager manager = null;
 DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
 LocalDateTime now = LocalDateTime.now();
 System.out.println(dtf.format(now));
-manager.operadriver().setup();
+manager.chromedriver().setup();
 ChromeOptions op=new ChromeOptions();
 op.addArguments("--disable-notifications");
 WebDriver driver=new ChromeDriver(op);
@@ -37,7 +37,7 @@ driver.findElement(By.id("pass")).sendKeys("8147993558FACEBOOKvarun");
 driver.findElement(By.name("login")).click();
 //driver.findElement(By.xpath("//div[@role='banner']/descendant::div[@class='x9f619 x1n2onr6 x1ja2u2z']/child::div[contains(@aria-label,'Messenger')]")).click();
 //driver.findElement(By.xpath("//input[@type='search' and @aria-label='Search Messenger']")).sendKeys("hemanth");
-driver.findElement(By.xpath("//span[.='Hëmåñth Hêm']")).click();
+driver.findElement(By.xpath("//span[.='HÃ«mÃ¥Ã±th HÃªm']")).click();
 driver.findElement(By.xpath("//p[@class='xat24cr xdj266r']")).sendKeys(dtf.format(now)+""+"hi",Keys.RETURN);
 driver.close();
 }
