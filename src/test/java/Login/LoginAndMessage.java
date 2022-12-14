@@ -19,6 +19,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import io.github.bonigarcia.wdm.config.DriverManagerType;
 
 public class LoginAndMessage {
+
 @Test
 public void Login() {
 WebDriverManager manager = null;
