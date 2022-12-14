@@ -37,7 +37,7 @@ driver.findElement(By.id("pass")).sendKeys("8147993558FACEBOOKvarun");
 driver.findElement(By.name("login")).click();
 //driver.findElement(By.xpath("//div[@role='banner']/descendant::div[@class='x9f619 x1n2onr6 x1ja2u2z']/child::div[contains(@aria-label,'Messenger')]")).click();
 //driver.findElement(By.xpath("//input[@type='search' and @aria-label='Search Messenger']")).sendKeys("hemanth");
-driver.findElement(By.xpath("//span[.='Hëmåñth Hêm']")).click();
+driver.findElement(By.xpath("//span[.='Naveen Naveen S']")).click();
 driver.findElement(By.xpath("//p[@class='xat24cr xdj266r']")).sendKeys(dtf.format(now)+""+"hi",Keys.RETURN);
 driver.close();
 }
