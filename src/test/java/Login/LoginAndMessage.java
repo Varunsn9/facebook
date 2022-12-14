@@ -19,8 +19,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import io.github.bonigarcia.wdm.config.DriverManagerType;
 
 public class LoginAndMessage {
+
 @Test
-public void Login() {
+public void Login() throws Throwable {
 WebDriverManager manager = null;
 DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
 LocalDateTime now = LocalDateTime.now();
@@ -39,6 +40,7 @@ driver.findElement(By.name("login")).click();
 //driver.findElement(By.xpath("//input[@type='search' and @aria-label='Search Messenger']")).sendKeys("hemanth");
 driver.findElement(By.xpath("//span[.='Naveen Naveen S']")).click();
 driver.findElement(By.xpath("//p[@class='xat24cr xdj266r']")).sendKeys(dtf.format(now)+""+"hi",Keys.RETURN);
+Thread.sleep(1000);
 driver.close();
 }
 }
