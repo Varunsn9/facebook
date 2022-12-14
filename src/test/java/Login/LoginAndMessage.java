@@ -41,7 +41,9 @@ String time=dtf.format(now);
 //driver.findElement(By.xpath("//input[@type='search' and @aria-label='Search Messenger']")).sendKeys("hemanth");
 driver.findElement(By.xpath("//span[.='Naveen Naveen S']")).click();
 driver.findElement(By.xpath("//span[.='Naveen Naveen S']/ancestor::div[@aria-label='Chat settings']/../../../..//descendant::div[@aria-label='Message']")).sendKeys(time+""+"hi",Keys.RETURN);
+System.out.println("5sec");
 Thread.sleep(5000);
+System.out.println("5sec");
 System.out.println(time);
 driver.close();
 }
